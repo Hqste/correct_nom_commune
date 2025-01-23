@@ -2,9 +2,9 @@ import pandas as pd
 from rapidfuzz import process
 import unicodedata
 
-fichier_reference = '/content/v_commune_2024.csv'
-fichier_mal = '/content/communes_mal.csv'
-fichier_sortie = '/content/communes_corrigees.csv'
+fichier_reference = ''
+fichier_mal = ''
+fichier_sortie = ''
 
 communes_ref = pd.read_csv(fichier_reference, encoding='UTF-8', sep=',')
 communes_ref['NCC'] = communes_ref['NCC'].apply(
